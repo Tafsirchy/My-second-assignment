@@ -9,3 +9,37 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+.card{
+  width: 270px;
+  height: 480px;
+  text-align: center;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card{
+    width: 170px;
+    height: 380px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .HSA > a{
+    display: none;
+  }
+  .header-content{
+    flex-direction: column-reverse;
+    width: auto;
+  }
+  .header-text{
+    width: auto;
+  }
+}
