@@ -26,10 +26,10 @@
 .varticle img{
   width: 100%;
   height: 50%;
-
 }
 
 @media screen and (max-width: 576px) {
+
   .cards{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -52,12 +52,28 @@
   .flower-content{
     width: auto;
   }
-  .flex{
+  .plants{
     flex-direction: column;
     align-items: center;
     width: auto;
   }
   .badge{
     display: none;
+  }
+  .text-center{
+    width: auto;
+  }
+  .flower-container{
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .varticle{
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .third-image{
+    width: auto;
   }
 }
