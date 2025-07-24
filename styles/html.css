@@ -22,7 +22,11 @@
   justify-items: center;
   gap: 30px 20px;
 }
-
+.card button{
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
 /* latest deals */
 
 .main-container{
@@ -75,7 +79,41 @@
   align-items: center; 
   text-align: center;
 }
-
+.bunch{
+  background-image: url(../assets/news-letter-bg.png);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.bunch-content{
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.input-form{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.input-form input[type="email"]{
+  padding: 15px 20px;
+  flex-grow: 1;
+}
+.input-form button{
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+button:hover{
+  background-color: lightgreen ;
+  color: black;
+}
 @media screen and (max-width: 576px) {
   /* navbar */
   .HSA > a{
@@ -149,6 +187,20 @@
     width: auto;
     height: 240px;
   }
-  
+  /* bunch */
+  .bunch{
+    margin-top: 50px;
+  }
+  .bunch h2{
+    font-size: 2rem;
+  }
+  .input-form{
+    flex-direction: row;
+    align-items: row;
+  }
+  .input-form input[type="email"], .input-form button{
+    width: auto;
+    padding: 15px 10px;
+  }
 
 }
