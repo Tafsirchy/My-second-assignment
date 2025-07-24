@@ -10,16 +10,23 @@
     "wdth" 100;
 }
 
+
 .card{
   width: 270px;
-  height: 480px;
+  height: 484px;
   text-align: center;
 }
 .cards{
+  /* width: 100%; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
-  gap: 30px;
+  gap: 30px 20px;
+}
+.varticle img{
+  width: 100%;
+  height: 50%;
+
 }
 
 @media screen and (max-width: 576px) {
@@ -41,5 +48,16 @@
   }
   .header-text{
     width: auto;
+  }
+  .flower-content{
+    width: auto;
+  }
+  .flex{
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  .badge{
+    display: none;
   }
 }
