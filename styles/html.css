@@ -9,8 +9,7 @@
   font-variation-settings:
     "wdth" 100;
 }
-
-
+/* cards */
 .card{
   width: 270px;
   height: 484px;
@@ -23,13 +22,74 @@
   justify-items: center;
   gap: 30px 20px;
 }
-.varticle img{
+
+/* latest deals */
+
+.main-container{
+  margin-top: 120px;
+  display: flex;
+  height: 430px;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 100px;
+  
+}
+.container-1{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+.container-2{
+  background-image: url(../assets/deal-zabo.png);
+  background-size: cover;
+  background-position: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.small-img1{
+  background-image: url(../assets/deal-bloom.png);
+  background-size: cover;
   width: 100%;
   height: 50%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
+.small-img2{
+  background-image: url(../assets/deal-ana.png);
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
 }
 
 @media screen and (max-width: 576px) {
-
+  /* navbar */
+  .HSA > a{
+    display: none;
+  }
+/* card */
+  .header-content{
+    flex-direction: column-reverse;
+    width: auto;
+  }
+  .header-text{
+    margin-top: 20px;
+    width: auto;
+  }
   .cards{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -39,16 +99,6 @@
     margin: 0 auto;
     align-items: center;
   }
-  .HSA > a{
-    display: none;
-  }
-  .header-content{
-    flex-direction: column-reverse;
-    width: auto;
-  }
-  .header-text{
-    width: auto;
-  }
   .flower-content{
     width: auto;
   }
@@ -57,6 +107,13 @@
     align-items: center;
     width: auto;
   }
+  /* .flower-img > img{
+    margin: 0 auto;
+    width: 400px;
+  } */
+  /* .list-paragraph > li{
+    margin: 0 auto;
+  } */
   .badge{
     display: none;
   }
@@ -68,12 +125,30 @@
     width: auto;
     height: auto;
   }
-  .varticle{
+  .flower-img{
+    width: auto;
+  }
+  .deals-text{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .main-container{
     flex-direction: column;
     width: auto;
     height: auto;
+    margin: 0 auto;
+    justify-content: center; 
   }
-  .third-image{
+  .container-1{
+    flex-direction: column;
     width: auto;
+    height: 500px;
   }
+  .container-2{
+    width: auto;
+    height: 240px;
+  }
+  
+
 }
