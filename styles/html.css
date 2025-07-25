@@ -29,7 +29,6 @@
 }
 
 /* latest deals */
-
 .main-container{
   margin-top: 120px;
   display: flex;
@@ -209,6 +208,14 @@ button:hover{
     width: auto;
     height: 240px;
   }
+  .container-2 > p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .container-2 > button{
+    font-size: 16px;
+    font-weight: 600;
+  }
   /* bunch */
   .bunch{
     margin-top: 50px;
@@ -231,5 +238,6 @@ button:hover{
   }
   .footer-logo{
     margin-bottom: 20px;
+    width: auto;
   }
 }
