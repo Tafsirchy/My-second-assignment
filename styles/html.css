@@ -27,6 +27,7 @@
   border: none;
   transition: background-color 0.3s ease;
 }
+
 /* latest deals */
 
 .main-container{
@@ -79,6 +80,7 @@
   align-items: center; 
   text-align: center;
 }
+/* bunch */
 .bunch{
   background-image: url(../assets/news-letter-bg.png);
   width: 100%;
@@ -88,6 +90,8 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bunch-content{
   width: 100%;
@@ -114,12 +118,27 @@ button:hover{
   background-color: lightgreen ;
   color: black;
 }
+/* footer */
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 50px;
+  gap: 100px;
+  width: auto;
+}
+.footer-links{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  width: auto;
+  /* gap: 20px; */
+}
+
 @media screen and (max-width: 576px) {
-  /* navbar */
+  /* header */
   .HSA > a{
     display: none;
   }
-/* card */
+  
   .header-content{
     flex-direction: column-reverse;
     width: auto;
@@ -128,6 +147,7 @@ button:hover{
     margin-top: 20px;
     width: auto;
   }
+  /* card */
   .cards{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -137,6 +157,7 @@ button:hover{
     margin: 0 auto;
     align-items: center;
   }
+  /* plants */
   .flower-content{
     width: auto;
   }
@@ -166,11 +187,12 @@ button:hover{
   .flower-img{
     width: auto;
   }
+
+  /* deals */
   .deals-text{
     margin-top: 20px;
     margin-bottom: 50px;
   }
-
   .main-container{
     flex-direction: column;
     width: auto;
@@ -202,5 +224,12 @@ button:hover{
     width: auto;
     padding: 15px 10px;
   }
-
+  /* footer */
+  .footer-container{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .footer-logo{
+    margin-bottom: 20px;
+  }
 }
